@@ -123,7 +123,7 @@ public class Sub_Test_Case extends BaseTest {
                 System.out.println(Interval);
                 ReportUtil.report(true, "INFO", Interval, "");
 
-                  test_Case_Stratergy_1.Buy_Trades_From_Logic_FVG_Buy_Breakout();
+//                  test_Case_Stratergy_1.Buy_Trades_From_Logic_FVG_Buy_Breakout();
                   test_Case_Stratergy_2.Sell_Trades_From_Logic_FVG_Sell_Breakout();
 //                test_Case_Stratergy_3.Sell_Trades_From_Negative_Supertrend_Of_Sell_Trades();
 //                test_Case_Stratergy_4.Sell_Trades_From_Negative_Supertrend_Of_Buy_Trades();

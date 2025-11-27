@@ -58,8 +58,8 @@ public class Test_Case_Stratergy_2 extends BaseTest {
         String Current_Watchlist_Url = "";
         String Comments = "";
 
-        String ST1_Cndt_2_Watchlist_Name = prop.getProperty("ST1_Cndt_2_Watchlist_Name");
-        String ST1_Cndt_2_Watchlist_Url = prop.getProperty("ST1_Cndt_2_Watchlist_Url");
+        String ST2_Cndt_2_Watchlist_Name = prop.getProperty("ST2_Cndt_2_Watchlist_Name");
+        String ST2_Cndt_2_Watchlist_Url = prop.getProperty("ST2_Cndt_2_Watchlist_Url");
 
         // </editor-fold>
 
@@ -103,13 +103,13 @@ public class Test_Case_Stratergy_2 extends BaseTest {
 
                 // add Stocks from "ST2_CONDITION_1" to watchlist of ST2_Cndt2 Main header
                 watchlistPage.add_Stocks_To_Watchlist(Constants.TAB_DEFAULT_WATCHLIST_PAGE,
-                        ST1_Cndt_2_Watchlist_Name, ST1_Cndt_2_Watchlist_Url, stocks);
+                        ST2_Cndt_2_Watchlist_Name, ST2_Cndt_2_Watchlist_Url, stocks);
 
                 // Update Stock Alerts to  output textfile for end of the day validation
                 Comments = Constants.ST2_CONDITION_1_Step_1 + System.lineSeparator() + Constants.ACTION_STOCKS_ADDED ;
                 FileAndFolderFunctions.update_Output_Text_File_for_Alert_Results(Constants.TEXTFILE_PATH_ST2_CNDT2_MAIN_HEADER_WATCHLIST_UPDATES_FROM_CNDT_1,
-                        Comments, ST1_Cndt_2_Watchlist_Name,
-                        ST1_Cndt_2_Watchlist_Url, Alerts_Stock_Names);
+                        Comments, ST2_Cndt_2_Watchlist_Name,
+                        ST2_Cndt_2_Watchlist_Url, Alerts_Stock_Names);
 
             }
 
